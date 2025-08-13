@@ -1,0 +1,440 @@
+Ejercicio 1
+
+1. HTML (HyperText Markup Language) es el lenguaje de marcado que se utiliza para estructurar y presentar el contenido de la Web. Algo que resaltar es que no es un lenguaje de programación. Fue creado en 1991, con el objetivo principal de facilitar el intercambio de documentos en la WWW (World Wide Web). HTML tiene varias versiones que han salido a lo largo de los años, las mas importantes fueron: HTML 2.0, con la introducción de los formularios, tablas y listas; HTML 4.01, con la separación de estructura HTML y CSS; HTML5 agregando soporte de audio y video.
+
+2. Los principios básicos que recomienda seguir la W3C son: 
+	- Usar HTML de forma semántica
+	- Separar contenido y presentación
+	- Escribir código valido y bien formado
+	- Incluir metadatos claros
+	- Garantizar accesibilidad
+	- Usar enlaces y rutas correctas
+	- Compatibilidad y degradación elegante
+
+3. Un atributo se considera desaprobado cuando tenemos un elemento que funciona pero no se recomienda usarla porque existe una forma mas accesible de lograr el mismo efecto. Y un atributo obsoleto es un elemento que ya no forma parte de la especificación y no se debe usar.
+
+4. El DTD (Document Type Definition) es un conjunto de reglas que define la estructura y las etiquetas permitidas en el documento. Se contemplan tres especificaciones: Strict, Transitional y Frameset. 
+
+5. Los metadatados son datos que describen el contenido del documento y se colocan en el head. Se especifican en: meta internos, link apuntando a recursos externos y atributo en head.
+
+---------------------------------------------------------------------------------------------------------------------
+
+Ejercicio 2
+Analizar los siguientes segmentos de código indicando en qué sección del documento HTML
+se colocan, cuál es el efecto que producen y señalar cada uno de los elementos, etiquetas, y atributos
+(nombre y valor), aclarando si es obligatorio.
+
+(2.a)
+<!-- Código controlado el día 12/08/2009 →
+
+RTA: Lo que vemos en esta linea de código es un comentario. Puede ir en cualquier parte del documento HTML. Su función es ayudar al lector del código a tener conocimiento de ciertas cosas que en el código no se ven, asi también poder decir que ocurre en cada parte de nuestro doc. Esta el etiqueta de apertura (<!--), texto  y  etiqueta de cierre (-->).
+(2.b)
+
+<div id="bloque1">Contenido del bloque1</div> 
+
+Rta: vemos un div bien definido con etiqueta de apertura ( <div>) y de cierre ( </div). Crea un bloque en el cual se encuentra el texto " contenido del bloque1".  Dentro de la etiqueta de apertura encontramos un atributo id, el cual sirve para darle un nombre, es decir, un identificador a ese div. No es obligatorio el id, si lo es la apertura de cierre del div.
+
+(2.c)
+
+<img src="" alt="lugar imagen" id="im1" name="im1" width="32" height="32" longdesc="detalles.htm" />
+
+Rta: Encontramos una etiqueta img, la cual no tiene nada en el atributo src, lo que implica que no se mostrará ninguna imagen. Luego alt, que le da una descripción a la imagen ( no se muestra en la pagina. Se muestra solo si existe un error y no se carga correctamente la imagen). Id, como mencione anteriormente, es un identificador de la imagen. name no se suele usar en etiquetas img, también le da un " nombre a la img". Width le da el ancho y heigth el alto de la imagen, el numero entre comillas esta expresado en pixeles. longdesc, da una descripción mas detallada de la imagen, apunta a un archivo HTML el cual contiene mas detalles de la imagen.
+
+(2.d)
+
+<meta name="keywords" lang="es" content="casa, compra, venta, alquiler " />
+
+<meta http-equiv="expires" content="16-Sep-2019 7:49 PM" />
+
+Rta: Encontramos una etiqueta meta, que tiene el atributo name, que informa detalles sobre la pagina en los metadatos, estos se especifican en el atributo content, que estos son "casa, compra, venta, alquiler. Luego esta el atributo lang, que determina el idioma de la pagina web. El atributo http-equiv indica cuando el encabezado se quiere simular, y el atributo content es el valor de ese encabezado.
+
+(2.e)
+
+<a href="http://www.e-style.com.ar/resumen.html" type="text/html" hreflang="es" charset="utf-8"
+
+rel="help">Resumen HTML </a>
+
+Rta: Aca tenemos la etiqueta a, que significa anchor, que sirve para enlazar a otra pagina o archivo. Luego dentro tenemos al atributo href que indica a donde tiene que dirigirse. El atributo type indica que a donde se dirige va a ser un HTML o un texto. El atributo hreflang hace referencia al lenguaje de la pagina donde se dirige, en este caso es en español. Charset es un atributo que indica la codificación de caracteres a donde se dirige. Y por ultimo tenemos al atributo rel que indica la relación entre la pagina a la que nos dirigimos y la que estamos actualmente. Luego tenemos el contenido de la etiqueta.
+
+(2.f)
+
+<table width="200" summary="Datos correspondientes al ejercicio vencido">
+<caption align="top"> Título </caption>
+<tr>
+	<th scope="col">&nbsp;</th>
+	<th scope="col">A</th>
+	<th scope="col">B</th>
+	<th scope="col">C</th>
+</tr>
+<tr>
+	<th scope="row">1º</th>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+</tr>
+<tr>
+	<th scope="row">2º</th>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+</tr>
+</table>
+
+Rta: Al principio tenemos a la etiqueta table que nos indica que es una tabla de n filas y m columnas. Dentro de la etiqueta nos encontramos con width que modifica la anchura de esta, y summary que proporciona información para que un lector de pantalla pueda saber de que se esta hablando. Luego tenemos a la etiqueta caption, que indica el titulo de la tabla, y su atributo que es aling, que indica la alineación. Luego tenemos la etiqueta tr que indica las filas de las tablas y las th que indican las columnas. Dentro de las th tenemos al atributo scope que indica a quien le corresponde el encabezado de la tabla, en este caso es a toda la fila. Luego tenemos a la etiqueta td que indica el contenido de cada celda, y dentro de esta tenemos &nbsp; que es un espacio en blanco.
+
+------------------------------------------------------------
+
+Ejercicio 3:
+
+(a.)  
+<a href="http://www.google.com.ar">Click aquí para ir a Google</a>
+
+	una etiqueta a (link) que al hacer click sobre ella te lleva a google en la misma pestaña.
+<a href="http://www.google.com.ar" target="_blank">Click aquí para ir a Google</a>
+
+	lo mismo que la anterior, solo que debido al "target="_blank", google se abrira en otra pestaña.
+
+<a href="http://www.google.com.ar" type="text/html" hreflang="es" charset="utf-8" rel="help">
+
+	una etiqueta a (link) con varios atributos: 
+		href: indica la Url al cual apunta el enlace.
+		type: Indica el tipo para la url enlazada. Su funcion unicamente informativa.
+		hreflang: indica el lenguaje humano del recurso al que se enlaza. Tambien unicamente informativo.
+		charset: defini la codificación de caracteres de la URL enlazada.
+		rel: Especifica la relación del objeto de destino con el objeto de enlace.
+	por lo tanto, al diferencia que encuentro es solo informativa, esta linea de codigo es mas informativa que las otras 2. 
+	al no tener el target _blank, se abrirá google en la misma pestaña.
+
+<a href="#">Click aquí para ir a Google</a>
+	
+	En este caso, el link apunta a "#". Cuando ocurre esto, suele apuntarse a un fragmento de codigo html. Pero al no haber nada escrito despues del #,
+	este link no apunta a ninguna direccion. Por lo tanto, al cliquear sobre el no ocurrirá nada.
+
+<a href="#arriba">Click aquí para volver arriba</a>
+
+	A diferencia del anterior, este link apunta a una seccion del codigo html con id "arriba". Por lo tanto, al cliquear sobre el link 
+	nos llevará al fragmento de codigo con id "arriba".
+
+
+<a name="arriba" id="arriba"></a>
+
+	Un link vacio de contenido, solo con identificador y nombre.
+
+
+(b.)
+<p><img src="im1.jpg" alt="imagen1" /><a href="http://www.google.com.ar">Click aquí</a></p>
+	vemos una etiqueta p (parrafo) que contiene: una etiqueta img, la cual mostrará la imagen que se encuentre en la direccion "im1.jpg" y de no aparecer por algun error, veremos "imagen1".
+	Al lado de esta img, un link que apunta a google, que dice Click aquí.
+
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> Click aquí</p>
+	en este caso, veremos la imagen "im1.jpg", en forma de link, es decir, al cliquearla iremos a google. Esto no afectará visualmente la imagen. Y al lado de esta, el texto "Click aqui" cerrando el parrafo.
+
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" />Click aquí</a></p>
+	aqui, la diferencia es que la etiqueta "a" abarca tanto la img como "Click aqui" , por lo tanto al cliquear cualquiera de los 2, iremos a google.
+
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> <a href="http://www.google.com.ar">Click aquí</a></p>
+
+	la diferencia es que aqui tenemos 2 links dentro del mismo parrafo, que apuntan ambos a google, pero que se muestran de distinta forma. Uno es la imagen y otro es el texto "Click aqui".
+
+
+(c.)	
+<ul>
+<li>xxx</li>
+<li>yyy</li>
+<li>zzz</li>
+</ul>
+
+vemos una lista desordernada (ul), es decir, lista de items la cual tiene justamente 3 componentes (li).
+
+<ol>
+<li>xxx</li>
+<li>yyy</li>
+<li>zzz</li>
+</ol>
+
+a diferencia, esta lista es ordenada (ol), es decir, va de 1 a 3 comenzando por el 1.
+
+<ol>
+<li>xxx</li>
+</ol>
+<ol>
+<li value="2">yyy</li>
+</ol>
+<ol>
+<li value="3">zzz</li> 
+</ol>
+
+	vemos 3 listas ordenadas: 
+		la primera con tiene un unico componente li que dice xxx. Se mostrará -> 1. xxx
+		la segunda tambien tiene un unico componente li, pero este tiene el atributo "value" igualado a 2, esto quiere decir que aunque
+		sea el primer elemento de la lista, no se mostrará 1. yyy, sino 2. yyy
+		y la tercera es lo mismo que la segunda solo que al tener el value en 3, se mostrará 3. zzz, sin importar que sea el primer elemento de la lista.
+
+<blockquote>
+	<p>1. xxx<br />
+	2. yyy<br />
+	3. zzz</p>
+</blockquote>
+	
+	blockquote crea un bloque, el cual se utiliza para citar a otros autores. Dentro de este encontramos un parrafo se muestra en forma de lista gracias a la etiqueta
+	<br/> que hace un salto de linea. Debemos diferenciar este parrafo de las listas anteriores ya que el primero es un unico bloque de texto, en cambio, en las listas,
+	cada li tiene su propio bloque.
+
+(d.) 
+<table border="1" width="300">
+<tr>
+<th>Columna 1</th>
+<th>Columna 2</th>
+</tr>
+<tr>
+<td>Celda 1</td>
+<td>Celda 2</td>
+</tr>
+<tr>
+<td>Celda 3</td>
+<td>Celda 4</td>
+</tr>
+</table>
+
+
+<table border="1" width="300">
+<tr>
+<td><div align="center"><strong>Colum
+na1</strong></div></td>
+<td><div align="center"><strong>Columna
+2</strong></div></td>
+</tr>
+<tr>
+<td>Celda 1</td>
+<td>Celda 2</td>
+</tr>
+<tr>
+<td>Celda 3</td>
+<td>Celda 4</td>
+</tr>
+</table>
+
+
+la diferencia entre estas 2 tablas no es visual sino semantica. Ambas muestran la misma tabla. En la primera tenemos th, que
+es la etiqueta semántica para encabezados de tabla. El navegador los pone en negrita y centrados por defecto, y los lectores de pantalla saben que son cabeceras.
+Mientras que en la segunda, tenemos un div el cual contiene un strong con el texto "columna1". Basicamente hace lo mismo que th, pone en negrita con el strong y lo centra con el 
+atributo align="center" del div. Por lo tanto, la diferencia es de simplicidad y semantica. 
+
+(e.)
+
+<table width="200">
+<caption>
+Título
+</caption>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">
+&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+</table>
+
+<table width="200">
+<tr>
+<td colspan="3"><div
+align="center">Título</div></td>
+</tr>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+</table>
+
+la diferencia entre ambas tablas esta en el titulo de cada una, ya que en la primera se usa un caption, el cual seria el titulo real de la tabla y esta por fuera debe
+la estructura de datos. En la segunda se simula un titulo de tabla mediante el uso del atributo colspan, pero este esta dentro de la tabla (estructura de datos) .
+
+(f.)
+
+<table width="200">
+<tr>
+<td colspan="3"><div
+align="center">Título</div></td>
+</tr>
+<tr>
+<td rowspan="2" bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+</table>
+
+
+<table width="200">
+<tr>
+<td colspan="3"><div
+align="center">Título</div></td>
+</tr>
+<tr>
+<td colspan="2"
+bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+</table>
+
+la diferencia entre estas tablas esta en que una usa el atributo rowspan y otra el colspan. La primera hace que una columna abarque tantas filas como el numero que 
+le hayamos puesto al atributo rowspan, en este caso 2. Y la segunda, lo opuesto. Hace que una fila abarque tantas columnas como el nuestro que le hayamos puesto 
+al atributo colspan, en este caso 2.
+
+(g.)
+<table width="200" border="1">
+<tr>
+<td colspan="3"><div
+align="center">Título</div></td>
+</tr>
+<tr>
+<td colspan="2"rowspan="2">&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td width="50%">&nbsp;</td>
+</tr>
+</table>
+
+
+<table width="200" border="1" cellpadding="0"
+cellspacing="0">
+<tr>
+<td colspan="2"><div
+align="center">Título</div></td>
+</tr>
+<tr>
+<td rowspan="2">&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td width="50%">&nbsp;</td>
+</tr>
+</table>
+
+nuevamente, la diferencia no es visual, ambas muestran la misma tabla.
+
+ La de la izquierda tiene 3 columnas en estructura y espaciado por defecto.
+
+La de la derecha tiene 2 columnas en estructura y bordes pegados sin espacio interno.
+
+Visualmente se parecen mucho porque el contenido es vacío (&nbsp;) y las celdas combinadas ocultan la diferencia de columnas.
+
+(h.)
+
+<form id="form1" name="form1" action="procesar.php" method="post" target="_blank">
+<fieldset>
+<legend>LOGIN</legend>
+Usuario: <input type="text" id="usu1" name="usu1" value="xxx" /><br />
+Clave: <input type="password" id="clave1" name="clave1" value="xxx" />
+</fieldset>
+<input type="submit" id="boton1" name="boton1" value="Enviar" />
+</form>
+
+
+<form id="form2" name="form2" action="" method="get" target="_blank">
+LOGIN<br />
+<label>Usuario: <input type="text" id="usu2" name="usu2" /></label><br />
+<label>Clave: <input type="text" id="clave2" name="clave2" /></label><br />
+<input type="submit" id="boton2" name="boton2" value="Enviar" />
+</form>
+
+
+<form id="form3" name="form3" action="mailto:xx@xx.com” enctype=text/plain method="p
+ost" target="_blank">
+<fieldset>
+<legend>LOGIN</legend>
+Usuario: <input type="text" id="usu3" name="usu3" /><br />
+Clave: <input type="password" id="clave3" name="clave3" />
+</fieldset>
+<input type="reset" id="boton3" name="boton3" value=
+"Enviar" />
+</form>
+
+aqui tenemos 3 formularios. El primero y el tercero tienen un bloque dentro gracias a laa etiqueta fieldset
+mientras que el segundo no, el bloque es el formulario en si. 
+En los 3 tenemos dos inputs ( lugar donde el usuario podrá escribir sus datos): uno con "type = "text"" para el nombre de usuario
+y otro con "type = "password"" para la contraseña, que se muestra con puntitos.
+Gracias al atributo "value = "xxx"" en el primer form, en sus inputs, aparece ya escrito xxx en ambos.
+Tambien en este, tenemos mas atributos como "action = "procesar.php", esto indica que al enviar el formulario, se ejecutara el programa "procesar.php."
+method = "post" es el metocdo que usa el navegador para enviar el form. al ser post,  los datos del formulario son incluidos en el cuerpo del formulario y son enviados al servidor.
+target = "_blank" carga la respuesta dentro de una nueva ventana sin nombre en un contexto de navegacion en HTML5.
+
+En el segundo, a diferencia del primero, tenemos el atributo action vacio, es decir, al enviarse el form, no se ejecutará ningun programa. 
+en este caso, tenemos method = "get" que los datos del formulario son adjuntados a la URI del atributo action , con un '?' como separador, y la URI resultante es enviada al servidor
+
+Y en el tercero, tenemos un nuevo atributo enctype = text/plain que Cuando el valor del atributo method es post, este atributo es el tipo MIME del contenido que es usado para enviar el formulario al servidor.
+al ser =  text/plain , sera de tipo HTML5. 
+fijemonos que en este, el input de enviar es de tipo reset, es decir, no enviara los datos del form sino que al apretarlo
+reiniciara el formulario con los inputs vacios.
+
+(i.)
+
+<label>Botón 1
+<button type="button" name="boton1" id="boton1">
+<img src="logo.jpg" alt="Botón con imagen " width="30" height="20" /><br />
+<b>CLICK AQUÍ</b></button></label>
+
+
+<label>Botón 2
+<input type="button" name="boton2" id="boton2" value="CLICK AQUÍ" />
+</label>
+
+la diferencia entre ambos es que en el primero el boton es una imagen con el texto debajo "Click aqui", ambos dentro del boton.
+y en el segundo no tenemos imagen y el texto "CLICK AQUI" esta dado por el atributo value del button.
+
+(j.)
+<p><label><input type="radio" name="opcion" id="X" value="X" />X</label><br />
+<label><input type="radio" name="opcion" id="Y" value="Y" />Y</label></p>
+
+<p><label><input type="radio" name="opcion1" id="X" value="X" />X</label><br />
+<label><input type="radio" name="opcion2" id="Y" value="Y" />Y</label></p>
+
+La diferencia entre el codigo J1 y J2 es que el primero en la parte de name utiliza la misma variable "opcion" por lo que cuando eligas X o Y se reemplaza la eleccion,
+en cambio en la pagina con el codigo J2 al tener name distintos podemos elegir las dos opciones (X Y) al mismo tiempo
+
+(k.)
+<select name="lista">
+<optgroup label="Caso 1">
+<option>Mayo</option>
+<option>Junio</option>
+</optgroup>
+<optgroup label="Caso 2">
+<option>Mayo</option>
+<option>Junio</option>
+</optgroup>
+</select>
+
+
+<select name="lista[]" multiple="multiple">
+<optgroup label=" Caso 1">
+<option>Mayo</option>
+<option>Junio</option>
+</optgroup>
+<optgroup label=" Caso 2">
+<option>Mayo</option>
+<option>Junio</option>
+</optgroup>
+</select>
+
+ Las diferencia en el código es que en el primero se tiene el atributo múltiple y en el segundo no
+visualmente el primero se muestra como un slide donde se elijen las opciones y se permite elegir mas de una
+y en el segundo código se muestra como una lista plegable donde se selecciona una opción

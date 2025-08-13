@@ -1,0 +1,49 @@
+HTML 5
+
+Ejercicio 1
+
+1. Las ventajas de HTML 5 respecto a su versión anterior es que ahora podemos cargar videos y audios sin la necesidad de usar Flash u otro reproductor multimedia. Y además es que el resultado final es completamente accesible. 
+2. Lo utilizamos porque con las nuevas etiquetas que agrega podemos desarrollar una pagina mas limpia y sin la necesidad de otro tipo de lenguaje.
+3. Alguna de las ventajas son:
+	- Es gratuito
+	- El código es mas ordenado
+	- Compatibilidad en navegadores
+	- Almacenamiento mejorado
+	- Tiene un diseño adaptativo
+
+
+Ejercicio 2
+
+2.A Los formatos que soporta son mp3,wav,ogg,au.
+2.B <audio src="https://html5tutorial.info/media/vincent.mp3" controls>Este es el audio</audio>
+
+Ejercicio 3
+
+3.A Los formatos que soporta son mp4,webm
+3.B <video src="https://www.w3schools.com/html/mov_bbb.mp4/ogg" controls width="600" height="300">Video</video>
+
+Ejercicio 4
+
+A <form action="#"> 
+        <input type="text" required>
+        <input type="submit" value="confirmar"> 
+    </form> 
+
+B <form action="#"> 
+        <input type="email" required>
+        <input type="submit" value="confirmar"> 
+    </form> 
+
+C <form action="#"> 
+        <input type="date" required>
+        <input type="submit"> 
+    </form> 
+D <form action="#"> 
+        <input type="color" required>
+        <input type="submit"> 
+    </form>
+
+E <form action="#"> 
+        <input type="number" min="1" max="10" required>
+        <input type="submit"> 
+    </form>

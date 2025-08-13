@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejerciocio 4 EC</title>
+     <style>
+*{
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+header{
+    height: 100px;
+    border-bottom: 5px solid black;
+    margin-bottom: 20px;
+}
+header img{
+    height: 100px;
+}
+table{
+    border: 5px solid black;
+    display: inline-table;
+    border-collapse: collapse;
+    width: 500px;
+}
+table #row1 #col1 {
+    text-align: center;
+}
+table #row2 #col2 p{
+    text-align: end;
+}
+
+table #row3 #col3 p{
+    text-align: end;
+}
+td{
+    border: 3px solid black;
+}
+ol{
+    margin-top: 20px;
+}
+
+form > #e-mail{
+    padding-left: 22px;
+}
+form > div {
+    padding-left: 70px;
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <a href="https://www.frro.utn.edu.ar/contenido.php?cont=94&subc=26"><img src="/assets/LogoUtn.jpeg" alt="" width="32"></a>
+    </header>
+    <h1>AÑO 2008</h1>
+    <table>
+        <div> hola </div>
+        <tr id="row1">
+            <td id="col1" colspan="3">
+                <p> Examenes</p>
+            </td>
+        </tr>
+        <tr id="row2">
+            <td rowspan="2">
+                <p> Fecha: ........</p>
+            </td>
+            <td id="col2">
+                <p> Aprobados</p>
+            </td>
+        </tr>
+        <tr id="row3">
+             <td id="col3">
+                <p> 24/30</p>
+            </td>
+        </tr>
+    </table>
+    <ol>
+        <li><a href="#Enunciado"> Enunciado del examen</a></li>
+        <li><a href="./resolucion.html" target="_blank"> Resolucion</a></li>
+    </ol>
+
+    <p>Puede realizar consultas completando el siguiente formulario</p>
+    <form action="mailto: x@x.com">
+        <label for="" id="e-mail">  e-mail: <input type="email" placeholder="Yo@example.com" required style="height: 25px; width: 250px;" ></label><br>
+        <label for="">Consulta: <textarea style="vertical-align: top; height: 100px;width: 250px;" required></textarea></label>
+        <div class="botones">
+           <input type="submit" value="Enviar" style="height: 40px; width: 80px;">
+           <input type="button" value="Cancelar" style="height: 40px; width: 80px;">
+        </div>
+    </form>
+    <h2>Enunciado del examen</h2>
+    <div id="Enunciado">
+        <p>Ejercicio1: .............. <br> ..................................</p>
+        <p>Ejercicio2: .............. <br> ..................................</p>
+    </div>
+    <p>Para mas informacion dirijase a <a href="mailto: contacto@xx.com">contacto@xx.com</a></p>
+   
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5 EC</title>
+     <style>
+        *{
+            font-family: sans-serif;
+        }
+        table{
+            margin-top: 100px;
+            border: 2px solid black;
+            display: inline-table;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td{
+            border: 2px solid black;
+        }
+        table #row2 ol li a{
+            font-size: 1.5em;
+        }
+        table #row2 #prin {
+            text-align: center;
+            height: 300px;
+        }
+        table #row3 td {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table >
+        <tr id="row1">
+            <td id="encabezado" style="text-align: center;" colspan="2" width="80%">
+                <iframe src="encabezado.html" width="100%" ></iframe>
+            </td>
+            <td>
+                <iframe src="logo.html"><img src="/assets/LogoUtn.jpeg" width="70%" height="50%" alt=""></iframe>
+            </td>
+        </tr>
+        <tr id="row2">
+            <td id="menu" style="text-align: center;" width="30%" height="80px" >
+                <iframe src="menu.html" style="border: 3px solid black;"></iframe>
+            </td>
+            <td id="prin" colspan="2"><iframe src="articulos.html" name="art" style="border: 1px solid black;" ></iframe> 
+                <iframe src="masInfo.html" name="mas" style="border: 1px solid black;"></iframe>
+            </td>
+        </tr>
+        <tr id="row3"> 
+            <td colspan="3" style="text-align: center;"><iframe src="menu.html" width="100%" style="border: 3px solid black;"></iframe></td>
+        </tr>
+    </table>
+</body>
+</html>
